@@ -25,8 +25,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license !== 'none') {
-    return `## License
-  
+    return `
   This project is licensed under the ${license} license.`
   }
   return ``
@@ -40,11 +39,12 @@ function generateMarkdown(data) {
 # Table of Contents
 * [Description](#description)
 * [Dependencies](#dependencies)
-* [Repository Information](#repository information)
-* [Contriburtions](#contributions)
-* [Test Commands](#testCommand)
+* [Repository Information](#repository-information)
+* [License](#license)
+* [Contributions](#contributions)
+* [Test Commands](#test-commands)
 * [Contact](#contact)
-${renderLicenseLink(data.license)}
+
 
 ## Description
 
@@ -52,19 +52,23 @@ ${data.description}
 
 ## Dependencies
 
-# ${data.dependencies}
+${data.dependencies}
 
 ## Repository Information
 
-# ${data.contributions}
+${data.repoInfo}
 
 ## License
 
 ${renderLicenseSection(data.license)}
 
+## Contributions
+
+${data.contributions}
+
 ## Test Commands
 
-# ${data.testCommand}
+${data.testCommand}
 
 ## Contact
 
