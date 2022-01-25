@@ -7,7 +7,9 @@ For this assignment, a README Generator was written to provide a template for a 
 
 ![screenshot of website](./Develop/Images/screenshot.jpg)
 
-## Link to Deployed Site
+## Link to the GitHub Repository
+
+https://github.com/knolan18/9-README-Generator
 
 ## Link to Screencastify Walkthrough Video
 
